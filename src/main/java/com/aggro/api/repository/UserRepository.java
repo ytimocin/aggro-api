@@ -4,6 +4,8 @@ import com.aggro.api.entity.User;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
+import java.util.LinkedList;
+
 /**
  * Created by yeko on 17/10/15.
  */

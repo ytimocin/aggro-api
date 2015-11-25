@@ -3,6 +3,8 @@ package com.aggro.api.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.LinkedList;
+
 /**
  * Created by yeko on 16/10/15.
  */
@@ -14,7 +16,7 @@ public class User {
     private String username;
     private String email;
     private String password;
-    private int badge;
+    private LinkedList<String> badges;
 
     public String getAggroID() {
         return aggroID;
@@ -48,11 +50,11 @@ public class User {
         this.password = password;
     }
 
-    public int getBadge() {
-        return badge;
+    public LinkedList<String> getBadges() {
+        return badges;
     }
 
-    public void setBadge(int badge) {
-        this.badge = badge;
+    public void setBadges(LinkedList<String> badges) {
+        this.badges = badges;
     }
 }
